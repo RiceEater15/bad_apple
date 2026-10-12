@@ -18,7 +18,7 @@ function releaseWakeLock() {
     }
 }
 
-fetch('framesData.lz')
+fetch('https://cdn.jsdelivr.net/gh/RiceEater15/bad_apple@master/framesData.lz')
     .then(response => response.text())
     .then(data => {
         const decompressedData = LZString.decompressFromBase64(data); // Decompress the fetched data
